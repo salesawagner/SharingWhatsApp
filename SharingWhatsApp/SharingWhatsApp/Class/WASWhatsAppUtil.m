@@ -8,7 +8,6 @@
 
 #import "WASWhatsAppUtil.h"
 
-
 __strong static WASWhatsAppUtil* instanceOf = nil;
 
 @interface WASWhatsAppUtil()<UIDocumentInteractionControllerDelegate>{
@@ -38,6 +37,7 @@ __strong static WASWhatsAppUtil* instanceOf = nil;
 	} else {
 		[self alertWhatsappNotInstalled];
 	}
+	
 }
 
 - (void)sendImage:(UIImage*)image inView:(UIView*)view

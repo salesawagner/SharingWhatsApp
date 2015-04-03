@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WASWhatsAppUtil.h"
+#import <Crashlytics/Crashlytics.h>
 
 typedef enum{
 	kSendText = 0,
@@ -37,8 +38,9 @@ typedef enum{
 #pragma mark - IBActions
 - (IBAction)sendDidTouch:(id)sender
 {
-    UIActionSheet * sheet = [[UIActionSheet alloc]initWithTitle:@"Choose" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Send text",@"Send image",@"Send image with text",@"Send audio", nil];
-	[sheet showInView:self.view];
+//    UIActionSheet * sheet = [[UIActionSheet alloc]initWithTitle:@"Choose" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Send text",@"Send image",@"Send image with text",@"Send audio", nil];
+//	[sheet showInView:self.view];
+	[[Crashlytics sharedInstance] crash];
 }
 
 #pragma mark - UIActionSheet Delegate
