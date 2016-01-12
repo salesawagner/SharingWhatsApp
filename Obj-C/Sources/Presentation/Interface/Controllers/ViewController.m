@@ -21,21 +21,23 @@ typedef enum{
 	UIDocumentInteractionController *docControll;
 }
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation ViewController
 
 #pragma mark - Life Cycle
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+	
+	[self setupImageView];
 }
 
 #pragma mark - IBActions
 - (IBAction)sendDidTouch:(id)sender
 {
-//    UIActionSheet * sheet = [[UIActionSheet alloc]initWithTitle:@"Choose" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Send text",@"Send image",@"Send image with text",@"Send audio", nil];
-//	[sheet showInView:self.view];
-	
 	UIAlertController *as = [UIAlertController alertControllerWithTitle:@"Choose"
 																message:nil
 														 preferredStyle:UIAlertControllerStyleActionSheet];
@@ -46,7 +48,6 @@ typedef enum{
 										 handler:^(UIAlertAction *action) {
 
 		[[WASWhatsAppUtil getInstance] sendText:@"Text"];
-		[self dismissViewControllerAnimated:YES completion:^{}];
 	}]];
 
 	// Image
@@ -54,8 +55,9 @@ typedef enum{
 										   style:UIAlertActionStyleDefault
 										 handler:^(UIAlertAction *action) {
 
-		[[WASWhatsAppUtil getInstance] sendImage:[UIImage imageNamed:@"image.jpg"] inView:self.view];
-		[self dismissViewControllerAnimated:YES completion:^{}];
+		 NSData *data = UIImageJPEGRepresentation(self.imageView.image, 1.0);
+		 [[WASWhatsAppUtil getInstance] sendFile:data UTI:WhatsAppImageType inView:self.view];
+
 	}]];
 
 	// Audio
@@ -63,8 +65,10 @@ typedef enum{
 										   style:UIAlertActionStyleDefault
 										 handler:^(UIAlertAction *action) {
 		
-		[[WASWhatsAppUtil getInstance] sendText:@"Text"];
-		[self dismissViewControllerAnimated:YES completion:^{}];
+		 NSString *audioPath = [[NSBundle mainBundle] pathForResource:@"beeps" ofType:@"mp3"];
+		 NSData *data = [[NSData alloc]initWithContentsOfFile:audioPath];
+		 [[WASWhatsAppUtil getInstance] sendFile:data UTI:WhatsAppAudioType inView:self.view];
+
 	}]];
 	
 	// Cancel
@@ -76,6 +80,17 @@ typedef enum{
 	 }]];
 	
 	[self presentViewController:as animated:YES completion:nil];
+}
+
+#pragma mark - Setups
+
+- (void)setupImageView
+{
+	self.imageView.layer.shadowColor = [UIColor blackColor].CGColor;
+	self.imageView.layer.shadowOffset = CGSizeMake(0, 0);
+	self.imageView.layer.shadowOpacity = .5;
+	self.imageView.layer.shadowRadius = 1.0;
+	self.imageView.clipsToBounds = NO;
 }
 
 @end

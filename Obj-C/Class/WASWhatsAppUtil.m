@@ -8,9 +8,30 @@
 
 #import "WASWhatsAppUtil.h"
 
+// Whatsapp URLs
 NSString *const whatsAppUrl = @"whatsapp://app";
 NSString *const whatsAppSendTextUrl = @"whatsapp://send?text=";
 
+// Whatsapp UTI
+NSString *UTIWithWhatsAppType(WhatsAppType type) {
+	NSArray *arr = @[
+					 @"net.whatsapp.image", //image
+					 @"net.whatsapp.audio", //audio
+					 @"net.whatsapp.movie"  //movie
+					 ];
+	return (NSString *)[arr objectAtIndex:type];
+}
+
+NSString *typeWithWhatsAppType(WhatsAppType type) {
+	NSArray *arr = @[
+					 @"whatsAppTmp.wai", //image
+					 @"whatsAppTmp.waa", //audio
+					 @"whatsAppTmp.wam"  //movie
+					 ];
+	return (NSString *)[arr objectAtIndex:type];
+}
+
+// Instace
 __strong static WASWhatsAppUtil* instanceOf = nil;
 
 @interface WASWhatsAppUtil()<UIDocumentInteractionControllerDelegate>{
@@ -21,6 +42,7 @@ __strong static WASWhatsAppUtil* instanceOf = nil;
 
 @implementation WASWhatsAppUtil
 
+#pragma mark - Instance
 + (WASWhatsAppUtil*)getInstance
 {
 	static dispatch_once_t onceToken;
@@ -30,11 +52,12 @@ __strong static WASWhatsAppUtil* instanceOf = nil;
 	return instanceOf;
 }
 
+#pragma mark - Sends
 - (void)sendText:(NSString *)message
 {
 	NSString *urlWhats = [NSString stringWithFormat:@"%@%@",whatsAppSendTextUrl,message];
-	urlWhats = [urlWhats stringByAddingPercentEncodingWithAllowedCharacters:
-				[NSCharacterSet alphanumericCharacterSet]];
+	NSCharacterSet *set = [NSCharacterSet URLQueryAllowedCharacterSet];
+	urlWhats = [urlWhats stringByAddingPercentEncodingWithAllowedCharacters:set];
 	NSURL *whatsappURL = [NSURL URLWithString:urlWhats];
 	
 	if ( [self isWhatsAppInstalled] ) {
@@ -42,74 +65,55 @@ __strong static WASWhatsAppUtil* instanceOf = nil;
 	} else {
 		[self alertWhatsappNotInstalled];
 	}
-	
 }
 
-- (void)sendImage:(UIImage *)image inView:(UIView *)view
+- (void)sendFile:(NSData *)data UTI:(WhatsAppType)type inView:(UIView *)view
 {
 	if ( [self isWhatsAppInstalled] )
 	{
-		NSError *error = nil;
-		NSURL *documentURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory
-																	inDomain:NSUserDomainMask
-														   appropriateForURL:nil
-																	  create:NO
-																	   error:&error];
-
-		if (!documentURL){
-			[self alertErro:[NSString stringWithFormat:@"Error getting document directory: %@", error]];
-			return;
-		}
-		
-		NSURL *tempFile	= [documentURL URLByAppendingPathComponent:@"whatsAppTmp.wai"];
-		NSData *imageData = UIImageJPEGRepresentation(image, 1.0);
-		
-		if (![imageData writeToURL:tempFile options:NSDataWritingAtomic error:&error]){
-			[self alertErro:[NSString stringWithFormat:@"Error writing File: %@", error]];
-			return;
-		}
-		
+		NSURL *tempFile	= [self createTempFile:data type:typeWithWhatsAppType(type)];
 		_docControll = [UIDocumentInteractionController interactionControllerWithURL:tempFile];
-		_docControll.UTI = @"net.whatsapp.image";
+		_docControll.UTI = UTIWithWhatsAppType(type);
 		_docControll.delegate = self;
 		
-		[_docControll presentOpenInMenuFromRect:view.frame
+		[_docControll presentOpenInMenuFromRect:CGRectZero
 										 inView:view
 									   animated:YES];
-		
 	} else {
 		[self alertWhatsappNotInstalled];
 	}
 }
 
-- (void)sendAudioinView:(UIView *)view
+#pragma mark - Helpers
+- (NSURL *)createTempFile:(NSData *)data type:(NSString *)type
 {
-	if ( [self isWhatsAppInstalled] )
+	NSError *error = nil;
+	NSURL *tempFile = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory
+																inDomain:NSUserDomainMask
+													appropriateForURL:nil
+																  create:NO
+																error:&error];
+	
+	if (tempFile)
 	{
-		NSString *savePath = [[NSBundle mainBundle] pathForResource:@"beeps" ofType:@"mp3"];;
-		NSURL *tempFile	= [NSURL fileURLWithPath:savePath];
-		
-		_docControll = [UIDocumentInteractionController interactionControllerWithURL:tempFile];
-		_docControll.UTI = @"net.whatsapp.audio";
-		_docControll.delegate = self;
-		
-		[_docControll presentOpenInMenuFromRect:CGRectMake(0, 0, 0, 0)
-										 inView:view
-									   animated: YES];
-		
+		tempFile = [tempFile URLByAppendingPathComponent:type];
 	} else {
-		[self alertWhatsappNotInstalled];
+		[self alertErro:[NSString stringWithFormat:@"Error getting document directory: %@", error]];
 	}
+	
+	if (![data writeToURL:tempFile options:NSDataWritingAtomic error:&error]){
+		[self alertErro:[NSString stringWithFormat:@"Error writing File: %@", error]];
+	}
+	
+	return tempFile;
 }
 
-#pragma mark - private
 - (BOOL)isWhatsAppInstalled
 {
 	return [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:whatsAppUrl]];
 }
 
-#pragma mark - Alert helper
--(void)alertWithTitle:(NSString *)title message:(NSString *)message
+- (void)alertWithTitle:(NSString *)title message:(NSString *)message
 {
 	UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
 	UIAlertController *alert = [UIAlertController alertControllerWithTitle:title

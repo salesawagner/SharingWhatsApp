@@ -11,9 +11,15 @@
 
 @interface WASWhatsAppUtil : NSObject
 
+// Whatsapp UTI
+typedef enum {
+	WhatsAppImageType = 0,
+	WhatsAppAudioType,
+	WhatsAppVideoType
+} WhatsAppType;
+
 + (id)getInstance;
 - (void)sendText:(NSString*)message;
-- (void)sendImage:(UIImage*)image inView:(UIView*)view;
-- (void)sendAudioinView:(UIView*)view;
+- (void)sendFile:(NSData *)data UTI:(WhatsAppType)type inView:(UIView *)view;
 
 @end
