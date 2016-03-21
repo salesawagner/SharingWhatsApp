@@ -7,30 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7045ADC1CA0C145005EF922 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7045ADB1CA0C145005EF922 /* Info.plist */; };
+		A70D1A441CA0B92400AAD4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70D1A3D1CA0B92400AAD4D3 /* Images.xcassets */; };
+		A70D1A451CA0B92400AAD4D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70D1A3F1CA0B92400AAD4D3 /* LaunchScreen.xib */; };
+		A70D1A461CA0B92400AAD4D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70D1A401CA0B92400AAD4D3 /* Main.storyboard */; };
 		A75FDC6E1C4480C900E5DB5B /* WASWhatsAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A75FDC5B1C4480C900E5DB5B /* WASWhatsAppUtil.m */; };
-		A75FDC701C4480C900E5DB5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75FDC5F1C4480C900E5DB5B /* Images.xcassets */; };
-		A75FDC711C4480C900E5DB5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75FDC611C4480C900E5DB5B /* LaunchScreen.xib */; };
-		A75FDC721C4480C900E5DB5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75FDC621C4480C900E5DB5B /* Main.storyboard */; };
 		A75FDC741C4480C900E5DB5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A75FDC681C4480C900E5DB5B /* AppDelegate.m */; };
 		A75FDC751C4480C900E5DB5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A75FDC6C1C4480C900E5DB5B /* ViewController.m */; };
 		A75FDC761C4480C900E5DB5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A75FDC6D1C4480C900E5DB5B /* main.m */; };
-		A7D7CBB91C44B4E700C9F9E5 /* beeps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7D7CBB81C44B4E700C9F9E5 /* beeps.mp3 */; };
+		A7A83F461CA0BCF5001C1269 /* beeps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7A83F451CA0BCF5001C1269 /* beeps.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7045ADB1CA0C145005EF922 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A70D1A3D1CA0B92400AAD4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../Resources/Images.xcassets; sourceTree = "<group>"; };
+		A70D1A3F1CA0B92400AAD4D3 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../../../Resources/Interfaces/LaunchScreen.xib; sourceTree = "<group>"; };
+		A70D1A401CA0B92400AAD4D3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A75FDC5A1C4480C900E5DB5B /* WASWhatsAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASWhatsAppUtil.h; sourceTree = "<group>"; };
 		A75FDC5B1C4480C900E5DB5B /* WASWhatsAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASWhatsAppUtil.m; sourceTree = "<group>"; };
-		A75FDC5F1C4480C900E5DB5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		A75FDC611C4480C900E5DB5B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../Resources/Interfaces/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
-		A75FDC621C4480C900E5DB5B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Resources/Interfaces/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		A75FDC641C4480C900E5DB5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Resources/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		A75FDC671C4480C900E5DB5B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A75FDC681C4480C900E5DB5B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A75FDC6B1C4480C900E5DB5B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A75FDC6C1C4480C900E5DB5B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A75FDC6D1C4480C900E5DB5B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7A83F451CA0BCF5001C1269 /* beeps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beeps.mp3; sourceTree = "<group>"; };
 		A7D127331C44800900D1F00B /* SharingWhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharingWhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7D7CBB81C44B4E700C9F9E5 /* beeps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beeps.mp3; path = ../Resources/Files/beeps.mp3; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7045ADA1CA0C145005EF922 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7045ADB1CA0C145005EF922 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = "../../Resources/Supporting Files";
+			sourceTree = "<group>";
+		};
+		A70D1A3A1CA0B92400AAD4D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7A83F441CA0BCF5001C1269 /* Files */,
+				A70D1A3D1CA0B92400AAD4D3 /* Images.xcassets */,
+				A7045ADA1CA0C145005EF922 /* Supporting Files */,
+				A70D1A3E1CA0B92400AAD4D3 /* Interfaces */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A70D1A3E1CA0B92400AAD4D3 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A70D1A3F1CA0B92400AAD4D3 /* LaunchScreen.xib */,
+				A70D1A401CA0B92400AAD4D3 /* Main.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
 		A75FDC591C4480C900E5DB5B /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -51,42 +81,6 @@
 				A75FDC5B1C4480C900E5DB5B /* WASWhatsAppUtil.m */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		A75FDC5C1C4480C900E5DB5B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A75FDC5D1C4480C900E5DB5B /* Files */,
-				A75FDC5F1C4480C900E5DB5B /* Images.xcassets */,
-				A75FDC601C4480C900E5DB5B /* Interfaces */,
-				A75FDC631C4480C900E5DB5B /* Supporting Files */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		A75FDC5D1C4480C900E5DB5B /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				A7D7CBB81C44B4E700C9F9E5 /* beeps.mp3 */,
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
-		A75FDC601C4480C900E5DB5B /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				A75FDC611C4480C900E5DB5B /* LaunchScreen.xib */,
-				A75FDC621C4480C900E5DB5B /* Main.storyboard */,
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
-		A75FDC631C4480C900E5DB5B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A75FDC641C4480C900E5DB5B /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A75FDC651C4480C900E5DB5B /* Sources */ = {
@@ -125,11 +119,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		A7A83F441CA0BCF5001C1269 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7A83F451CA0BCF5001C1269 /* beeps.mp3 */,
+			);
+			name = Files;
+			path = ../../Resources/Files;
+			sourceTree = "<group>";
+		};
 		A7D1272A1C44800900D1F00B = {
 			isa = PBXGroup;
 			children = (
 				A75FDC591C4480C900E5DB5B /* Class */,
-				A75FDC5C1C4480C900E5DB5B /* Resources */,
+				A70D1A3A1CA0B92400AAD4D3 /* Resources */,
 				A75FDC651C4480C900E5DB5B /* Sources */,
 				A7D127341C44800900D1F00B /* Products */,
 			);
@@ -200,10 +203,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A75FDC711C4480C900E5DB5B /* LaunchScreen.xib in Resources */,
-				A75FDC701C4480C900E5DB5B /* Images.xcassets in Resources */,
-				A7D7CBB91C44B4E700C9F9E5 /* beeps.mp3 in Resources */,
-				A75FDC721C4480C900E5DB5B /* Main.storyboard in Resources */,
+				A70D1A451CA0B92400AAD4D3 /* LaunchScreen.xib in Resources */,
+				A70D1A441CA0B92400AAD4D3 /* Images.xcassets in Resources */,
+				A7A83F461CA0BCF5001C1269 /* beeps.mp3 in Resources */,
+				A7045ADC1CA0C145005EF922 /* Info.plist in Resources */,
+				A70D1A461CA0B92400AAD4D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/../Resources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.SharingWhatsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -321,7 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/../Resources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.SharingWhatsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

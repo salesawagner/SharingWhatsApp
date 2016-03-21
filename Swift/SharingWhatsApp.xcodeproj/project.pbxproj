@@ -7,27 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7D7CBCB1C44B68C00C9F9E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7CBC61C44B68C00C9F9E5 /* AppDelegate.swift */; };
-		A7D7CBD61C44B6D900C9F9E5 /* beeps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7D7CBCF1C44B6D900C9F9E5 /* beeps.mp3 */; };
-		A7D7CBD71C44B6D900C9F9E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D7CBD01C44B6D900C9F9E5 /* Images.xcassets */; };
-		A7D7CBD81C44B6D900C9F9E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D7CBD21C44B6D900C9F9E5 /* LaunchScreen.xib */; };
-		A7D7CBD91C44B6D900C9F9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D7CBD31C44B6D900C9F9E5 /* Main.storyboard */; };
-		A7D7CBF91C44B8BA00C9F9E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7CBC91C44B68C00C9F9E5 /* ViewController.swift */; };
+		A773FCA01CA0C07E00831EF9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A773FC9F1CA0C07E00831EF9 /* Info.plist */; };
+		A7A83F311CA0BA99001C1269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A83F291CA0BA99001C1269 /* Main.storyboard */; };
+		A7A83F361CA0BAE9001C1269 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A83F351CA0BAE9001C1269 /* Images.xcassets */; };
+		A7A83F391CA0BAFB001C1269 /* beeps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7A83F381CA0BAFB001C1269 /* beeps.mp3 */; };
+		A7A83F3B1CA0BB5F001C1269 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7A83F3A1CA0BB5F001C1269 /* LaunchScreen.xib */; };
+		A7A83F421CA0BC0A001C1269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A83F3D1CA0BC0A001C1269 /* AppDelegate.swift */; };
+		A7A83F431CA0BC0A001C1269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A83F411CA0BC0A001C1269 /* ViewController.swift */; };
+		A7A83F491CA0BDDA001C1269 /* WASWhatsAppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A83F481CA0BDDA001C1269 /* WASWhatsAppUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A71803921C44B3370081F81B /* SharingWhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharingWhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7D7CBC61C44B68C00C9F9E5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/Presentation/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		A7D7CBC91C44B68C00C9F9E5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sources/Presentation/Interface/Controllers/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		A7D7CBCF1C44B6D900C9F9E5 /* beeps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beeps.mp3; path = ../Resources/Files/beeps.mp3; sourceTree = SOURCE_ROOT; };
-		A7D7CBD01C44B6D900C9F9E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		A7D7CBD21C44B6D900C9F9E5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../Resources/Interfaces/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
-		A7D7CBD31C44B6D900C9F9E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Resources/Interfaces/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		A7D7CBFA1C44B9BF00C9F9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Resources/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		A773FC9F1CA0C07E00831EF9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77B67BA1CA0B9CE00EEC016 /* SharingWhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharingWhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A83F291CA0BA99001C1269 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A7A83F351CA0BAE9001C1269 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../Resources/Images.xcassets; sourceTree = "<group>"; };
+		A7A83F381CA0BAFB001C1269 /* beeps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beeps.mp3; sourceTree = "<group>"; };
+		A7A83F3A1CA0BB5F001C1269 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../../../Resources/Interfaces/LaunchScreen.xib; sourceTree = "<group>"; };
+		A7A83F3D1CA0BC0A001C1269 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7A83F411CA0BC0A001C1269 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7A83F481CA0BDDA001C1269 /* WASWhatsAppUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASWhatsAppUtil.swift; path = Class/WASWhatsAppUtil.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A718038F1C44B3370081F81B /* Frameworks */ = {
+		A77B67B71CA0B9CE00EEC016 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,121 +40,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A71803891C44B3370081F81B = {
+		A773FC9E1CA0C07E00831EF9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A71803941C44B3370081F81B /* SharingWhatsApp */,
-				A71803931C44B3370081F81B /* Products */,
+				A773FC9F1CA0C07E00831EF9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = "../../Resources/Supporting Files";
+			sourceTree = "<group>";
+		};
+		A77B67B11CA0B9CE00EEC016 = {
+			isa = PBXGroup;
+			children = (
+				A77B67BC1CA0B9CE00EEC016 /* SharingWhatsApp */,
+				A77B67BB1CA0B9CE00EEC016 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A71803931C44B3370081F81B /* Products */ = {
+		A77B67BB1CA0B9CE00EEC016 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A71803921C44B3370081F81B /* SharingWhatsApp.app */,
+				A77B67BA1CA0B9CE00EEC016 /* SharingWhatsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A71803941C44B3370081F81B /* SharingWhatsApp */ = {
+		A77B67BC1CA0B9CE00EEC016 /* SharingWhatsApp */ = {
 			isa = PBXGroup;
 			children = (
-				A7D7CBC01C44B68C00C9F9E5 /* Class */,
-				A7D7CBCD1C44B6D900C9F9E5 /* Resources */,
-				A7D7CBC41C44B68C00C9F9E5 /* Sources */,
+				A7A83F471CA0BDAC001C1269 /* Class */,
+				A7A83F251CA0BA99001C1269 /* Resources */,
+				A7A83F3C1CA0BC0A001C1269 /* Sources */,
 			);
 			path = SharingWhatsApp;
 			sourceTree = "<group>";
 		};
-		A7D7CBC01C44B68C00C9F9E5 /* Class */ = {
+		A7A83F251CA0BA99001C1269 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A773FC9E1CA0C07E00831EF9 /* Supporting Files */,
+				A7A83F371CA0BAFB001C1269 /* Files */,
+				A7A83F351CA0BAE9001C1269 /* Images.xcassets */,
+				A7A83F271CA0BA99001C1269 /* Interfaces */,
 			);
-			name = Class;
-			path = ../Class;
-			sourceTree = "<group>";
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
 		};
-		A7D7CBC41C44B68C00C9F9E5 /* Sources */ = {
+		A7A83F271CA0BA99001C1269 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				A7D7CBC51C44B68C00C9F9E5 /* Presentation */,
-			);
-			name = Sources;
-			path = ../Sources;
-			sourceTree = "<group>";
-		};
-		A7D7CBC51C44B68C00C9F9E5 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				A7D7CBC61C44B68C00C9F9E5 /* AppDelegate.swift */,
-				A7D7CBC71C44B68C00C9F9E5 /* Interface */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		A7D7CBC71C44B68C00C9F9E5 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				A7D7CBC81C44B68C00C9F9E5 /* Controllers */,
-			);
-			path = Interface;
-			sourceTree = "<group>";
-		};
-		A7D7CBC81C44B68C00C9F9E5 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				A7D7CBC91C44B68C00C9F9E5 /* ViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		A7D7CBCD1C44B6D900C9F9E5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A7D7CBCE1C44B6D900C9F9E5 /* Files */,
-				A7D7CBD01C44B6D900C9F9E5 /* Images.xcassets */,
-				A7D7CBD11C44B6D900C9F9E5 /* Interfaces */,
-				A7D7CBD41C44B6D900C9F9E5 /* Supporting Files */,
-			);
-			name = Resources;
-			path = ../../Resources;
-			sourceTree = "<group>";
-		};
-		A7D7CBCE1C44B6D900C9F9E5 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				A7D7CBCF1C44B6D900C9F9E5 /* beeps.mp3 */,
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
-		A7D7CBD11C44B6D900C9F9E5 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				A7D7CBD21C44B6D900C9F9E5 /* LaunchScreen.xib */,
-				A7D7CBD31C44B6D900C9F9E5 /* Main.storyboard */,
+				A7A83F3A1CA0BB5F001C1269 /* LaunchScreen.xib */,
+				A7A83F291CA0BA99001C1269 /* Main.storyboard */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
-		A7D7CBD41C44B6D900C9F9E5 /* Supporting Files */ = {
+		A7A83F371CA0BAFB001C1269 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				A7D7CBFA1C44B9BF00C9F9E5 /* Info.plist */,
+				A7A83F381CA0BAFB001C1269 /* beeps.mp3 */,
 			);
-			path = "Supporting Files";
+			name = Files;
+			path = ../../Resources/Files;
+			sourceTree = "<group>";
+		};
+		A7A83F3C1CA0BC0A001C1269 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A7A83F3D1CA0BC0A001C1269 /* AppDelegate.swift */,
+				A7A83F3E1CA0BC0A001C1269 /* Presentation */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		A7A83F3E1CA0BC0A001C1269 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A7A83F3F1CA0BC0A001C1269 /* Interface */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A7A83F3F1CA0BC0A001C1269 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A7A83F401CA0BC0A001C1269 /* Controllers */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A7A83F401CA0BC0A001C1269 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7A83F411CA0BC0A001C1269 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7A83F471CA0BDAC001C1269 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A7A83F481CA0BDDA001C1269 /* WASWhatsAppUtil.swift */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A71803911C44B3370081F81B /* SharingWhatsApp */ = {
+		A77B67B91CA0B9CE00EEC016 /* SharingWhatsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A71803A41C44B3370081F81B /* Build configuration list for PBXNativeTarget "SharingWhatsApp" */;
+			buildConfigurationList = A77B67CC1CA0B9CE00EEC016 /* Build configuration list for PBXNativeTarget "SharingWhatsApp" */;
 			buildPhases = (
-				A718038E1C44B3370081F81B /* Sources */,
-				A718038F1C44B3370081F81B /* Frameworks */,
-				A71803901C44B3370081F81B /* Resources */,
+				A77B67B61CA0B9CE00EEC016 /* Sources */,
+				A77B67B71CA0B9CE00EEC016 /* Frameworks */,
+				A77B67B81CA0B9CE00EEC016 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -159,26 +162,26 @@
 			);
 			name = SharingWhatsApp;
 			productName = SharingWhatsApp;
-			productReference = A71803921C44B3370081F81B /* SharingWhatsApp.app */;
+			productReference = A77B67BA1CA0B9CE00EEC016 /* SharingWhatsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A718038A1C44B3370081F81B /* Project object */ = {
+		A77B67B21CA0B9CE00EEC016 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Wagner Sales";
 				TargetAttributes = {
-					A71803911C44B3370081F81B = {
-						CreatedOnToolsVersion = 7.2;
+					A77B67B91CA0B9CE00EEC016 = {
+						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = B6M4H2TQY8;
 					};
 				};
 			};
-			buildConfigurationList = A718038D1C44B3370081F81B /* Build configuration list for PBXProject "SharingWhatsApp" */;
+			buildConfigurationList = A77B67B51CA0B9CE00EEC016 /* Build configuration list for PBXProject "SharingWhatsApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -186,44 +189,46 @@
 				en,
 				Base,
 			);
-			mainGroup = A71803891C44B3370081F81B;
-			productRefGroup = A71803931C44B3370081F81B /* Products */;
+			mainGroup = A77B67B11CA0B9CE00EEC016;
+			productRefGroup = A77B67BB1CA0B9CE00EEC016 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A71803911C44B3370081F81B /* SharingWhatsApp */,
+				A77B67B91CA0B9CE00EEC016 /* SharingWhatsApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A71803901C44B3370081F81B /* Resources */ = {
+		A77B67B81CA0B9CE00EEC016 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D7CBD81C44B6D900C9F9E5 /* LaunchScreen.xib in Resources */,
-				A7D7CBD91C44B6D900C9F9E5 /* Main.storyboard in Resources */,
-				A7D7CBD71C44B6D900C9F9E5 /* Images.xcassets in Resources */,
-				A7D7CBD61C44B6D900C9F9E5 /* beeps.mp3 in Resources */,
+				A7A83F3B1CA0BB5F001C1269 /* LaunchScreen.xib in Resources */,
+				A7A83F361CA0BAE9001C1269 /* Images.xcassets in Resources */,
+				A7A83F311CA0BA99001C1269 /* Main.storyboard in Resources */,
+				A773FCA01CA0C07E00831EF9 /* Info.plist in Resources */,
+				A7A83F391CA0BAFB001C1269 /* beeps.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A718038E1C44B3370081F81B /* Sources */ = {
+		A77B67B61CA0B9CE00EEC016 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D7CBF91C44B8BA00C9F9E5 /* ViewController.swift in Sources */,
-				A7D7CBCB1C44B68C00C9F9E5 /* AppDelegate.swift in Sources */,
+				A7A83F431CA0BC0A001C1269 /* ViewController.swift in Sources */,
+				A7A83F491CA0BDDA001C1269 /* WASWhatsAppUtil.swift in Sources */,
+				A7A83F421CA0BC0A001C1269 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A71803A21C44B3370081F81B /* Debug */ = {
+		A77B67CA1CA0B9CE00EEC016 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +273,7 @@
 			};
 			name = Debug;
 		};
-		A71803A31C44B3370081F81B /* Release */ = {
+		A77B67CB1CA0B9CE00EEC016 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,52 +311,56 @@
 			};
 			name = Release;
 		};
-		A71803A51C44B3370081F81B /* Debug */ = {
+		A77B67CD1CA0B9CE00EEC016 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.SharingWhatsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		A71803A61C44B3370081F81B /* Release */ = {
+		A77B67CE1CA0B9CE00EEC016 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.SharingWhatsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A718038D1C44B3370081F81B /* Build configuration list for PBXProject "SharingWhatsApp" */ = {
+		A77B67B51CA0B9CE00EEC016 /* Build configuration list for PBXProject "SharingWhatsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A71803A21C44B3370081F81B /* Debug */,
-				A71803A31C44B3370081F81B /* Release */,
+				A77B67CA1CA0B9CE00EEC016 /* Debug */,
+				A77B67CB1CA0B9CE00EEC016 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A71803A41C44B3370081F81B /* Build configuration list for PBXNativeTarget "SharingWhatsApp" */ = {
+		A77B67CC1CA0B9CE00EEC016 /* Build configuration list for PBXNativeTarget "SharingWhatsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A71803A51C44B3370081F81B /* Debug */,
-				A71803A61C44B3370081F81B /* Release */,
+				A77B67CD1CA0B9CE00EEC016 /* Debug */,
+				A77B67CE1CA0B9CE00EEC016 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A718038A1C44B3370081F81B /* Project object */;
+	rootObject = A77B67B21CA0B9CE00EEC016 /* Project object */;
 }

@@ -2,20 +2,22 @@
 //  ViewController.swift
 //  SharingWhatsApp
 //
-//  Created by Wagner Sales on 1/12/16.
+//  Created by Wagner Sales on 3/21/16.
 //  Copyright © 2016 Wagner Sales. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-	
+
 	@IBOutlet weak var imageView: UIImageView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
 	}
 
+	@IBAction func sendDidTouch(sender: AnyObject) {
+	
+	}
 }
 
